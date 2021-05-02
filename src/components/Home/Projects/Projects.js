@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Projects = () => {
     return (
-        <section className='container'>
+        <section id='projects' className='container'>
             <h1 className='text-center'>My Projects</h1>
             <div className="row">
                 <div className="col-md-4">

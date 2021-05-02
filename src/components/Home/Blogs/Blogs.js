@@ -4,7 +4,7 @@ const Blogs = () => {
     return (
         <section className='text-center'>
             <h1>Blogs</h1>
-            <p>Coming soooooon</p>
+            <p>Coming soon.........</p>
         </section>
     );
 };

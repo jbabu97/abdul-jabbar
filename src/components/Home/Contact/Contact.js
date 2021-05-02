@@ -1,5 +1,8 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import './Contact.css';
 
 const Contact = () => {
 
@@ -16,26 +19,9 @@ const Contact = () => {
     }
     
     return (
-        <section className='container'>
-            <h2>Contact Me</h2>
+        <section id='contact' className='container'>
+            <h2 className='text-center'>Contact Me</h2>
             <div className="row">
-                <div className="col-md-6">
-                <form onSubmit={sendEmail}>
-                    <div className="mb-3">
-                        <input type="text" name='name' className="form-control" placeholder="Name" />
-                    </div>
-                    <div className="mb-3">
-                        <input type="email" name='email' className="form-control" placeholder='Email' />
-                    </div>
-                    <div className="mb-3">
-                        <input type="text" name='subject' className="form-control" placeholder='Subject' />
-                    </div>
-                    <div className="mb-3">
-                        <textarea name='message' className='form-control' style={{resize: 'none'}} id="" cols="30" rows="5"></textarea>
-                    </div>
-                    <button type="submit" className="btn btn-primary">Send</button>
-                    </form>
-                </div>
                 <div className="col-md-6">
                     <div>
                         <p>email: jabbar.babu81@gmail.com</p>
@@ -43,10 +29,28 @@ const Contact = () => {
                         <p>locaton: Gazipur, Dhaka, Bangladesh</p>
                     </div>
                     <div className="social">
-                        <a href="https://www.facebook.com/muhammadabduljabbar.babu" target='_blank'>Facebook</a>
-                        <a href="https://www.linkedin.com/in/jabbarbabu/" target='_blank'>Linkedin</a>
-                        <a href="https://twitter.com/jbabu97" target='_blank'>Twitter</a>
+                        <a href="https://www.facebook.com/muhammadabduljabbar.babu" target='_blank'><FontAwesomeIcon className='social_icon' icon={faFacebook} /></a>
+                        <a href="https://www.linkedin.com/in/jabbarbabu/" target='_blank'><FontAwesomeIcon className='social_icon' icon={faLinkedin} /></a>
+                        <a href="https://twitter.com/jbabu97" target='_blank'><FontAwesomeIcon className='social_icon' icon={faTwitterSquare} /></a>
                     </div>
+                </div>
+                <div className="col-md-6">
+                    <p>Feel free to leave message here</p>
+                    <form onSubmit={sendEmail}>
+                        <div className="mb-3">
+                            <input type="text" name='name' className="form-control" placeholder="Name" />
+                        </div>
+                        <div className="mb-3">
+                            <input type="email" name='email' className="form-control" placeholder='Email' />
+                        </div>
+                        <div className="mb-3">
+                            <input type="text" name='subject' className="form-control" placeholder='Subject' />
+                        </div>
+                        <div className="mb-3">
+                            <textarea name='message' className='form-control' style={{resize: 'none'}} id="" cols="30" rows="5"></textarea>
+                        </div>
+                        <button type="submit" className="custom_btn">Send</button>
+                    </form>
                 </div>
             </div>
         </section>

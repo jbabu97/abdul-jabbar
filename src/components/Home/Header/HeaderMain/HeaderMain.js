@@ -14,12 +14,14 @@ const HeaderMain = () => {
                     <div>
                         <h3>I'm Abdul Jabbar</h3>
                         <h1>Junior Web Developer</h1>
-                        <button><a href="https://drive.google.com/uc?export=download&id=1HbJyudz58b5jXFnXqioeHPNwA8FnfbZo"><FontAwesomeIcon className='download_icon' icon={faArrowCircleDown} /> Resume (PDF)</a>
+                        <button className='custom_btn'><a href="https://drive.google.com/uc?export=download&id=1bEni8nj3ku67YTUkuF5qUN_aY-q-TKs5"><FontAwesomeIcon className='download_icon' icon={faArrowCircleDown} /> Resume (PDF)</a>
                     </button>
                     </div>
                 </div>
                 <div className='col-md-6 profile_photo'>
-                    <img src={ProfilePhoto} alt=""/>
+                    <div className='profile_photo'>
+                        <img src={ProfilePhoto} alt="Abdul Jabbar"/>
+                    </div>
                 </div>
             </div>
         </section>

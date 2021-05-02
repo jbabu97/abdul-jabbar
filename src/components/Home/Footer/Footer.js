@@ -1,11 +1,10 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
     return (
-        <section>
-            <div className="text-center">
+        <section className='footer'>
                 <p>Abdul Jabbar &copy; {(new Date()).getFullYear()} All right reserved</p>
-            </div>
         </section>
     );
 };
