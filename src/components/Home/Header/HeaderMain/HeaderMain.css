@@ -1,0 +1,17 @@
+
+.header_main .welcome {
+    display: flex;
+    align-items: center;
+}
+.profile_photo img {
+    width: 400px;
+}
+.welcome h3 {
+    text-transform: uppercase;
+}
+.welcome h1 {
+    font-size: 3rem;
+}
+.welcome button a {
+    text-decoration: none;
+}
