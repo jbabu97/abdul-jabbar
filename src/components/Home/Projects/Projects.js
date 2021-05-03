@@ -1,9 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
 import MamaPhoto from '../../../photos/mama_sewing.jpg';
 import { Link } from 'react-router-dom';
+import MamaSewing from '../ProjectMamaSewing/MamaSewing';
+import MiniBazar from '../MiniBazar/MiniBazar';
+import TravelHanger from '../TravelHanger/TravelHanger';
 
 const Projects = () => {
+
+    const [show, setShow] = useState(false);
+
+  const modalClose = () => setShow(false);
+  const modalShow = () => setShow(true);
+
+  const [mini, setMini] = useState(false);
+
+  const miniBazarClose = () => setMini(false);
+  const miniBazarShow = () => setMini(true);
+
+  const [travel, setTravel] = useState(false);
+
+  const travelClose = () => setTravel(false);
+  const travelShow = () => setTravel(true);
+
+
     return (
         <section id='projects' className='container'>
             <h1 className='text-center'>My Projects</h1>
@@ -16,32 +36,35 @@ const Projects = () => {
                             <p>Tailoring Service Site</p>
                         </div>
                         <div className="see_more">
-                            <Link style={{textDecoration: 'none'}} className='ml-auto'><button className='animate__animated animate__fadeInDown'>See More</button></Link>
+                            <button onClick={modalShow} className='animate__animated animate__fadeInDown custom_btn'>See More</button>
                         </div>
+                        <MamaSewing show={show} modalClose={modalClose}></MamaSewing>
                     </div>
                 </div>
                 <div className="col-md-4">
                         <div className="text-center project">
                             <div>
                                 <img className='img-fluid' src={MamaPhoto} alt=""/>
-                                <h3>mama sewing</h3>
-                                <p>Tailoring Service Site</p>
+                                <h3>miniBazar</h3>
+                                <p>Grocery Site</p>
                             </div>
                             <div className="see_more">
-                                <Link style={{textDecoration: 'none'}} className='ml-auto'><button className='animate__animated animate__fadeInDown'>See More</button></Link>
+                                <button onClick={miniBazarShow} className='animate__animated animate__fadeInDown custom_btn'>See More</button>
                             </div>
+                            <MiniBazar show={mini} modalClose={miniBazarClose}></MiniBazar>
                         </div>
                 </div>
                 <div className="col-md-4">
-                    <div className="text-center project">
+                    <div className="text-center project"> 
                         <div>
                             <img className='img-fluid' src={MamaPhoto} alt=""/>
-                            <h3>mama sewing</h3>
-                            <p>Tailoring Service Site</p>
+                            <h3>travel hanger</h3>
+                            <p>Travel Service Site</p>
                         </div>
                         <div className="see_more">
-                            <Link style={{textDecoration: 'none'}} className='ml-auto'><button className='animate__animated animate__fadeInDown'>See More</button></Link>
+                            <button onClick={travelShow} className='animate__animated animate__fadeInDown custom_btn'>See More</button>
                         </div>
+                        <TravelHanger show={travel} modalClose={travelClose}></TravelHanger>
                     </div> 
                 </div>
             </div>

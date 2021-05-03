@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(90deg, #5c7269, #437453);
 }
 .custom_btn {
     background-image: linear-gradient(90deg, #17223f, #444d68);

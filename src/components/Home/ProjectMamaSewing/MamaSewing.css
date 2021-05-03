@@ -1,0 +1,10 @@
+.modal_footer a {
+    text-decoration: none;
+}
+.modal_footer a:hover {
+    color: #e5ce8f;
+}
+
+.slider_photo img {
+    height: 200px;
+}
