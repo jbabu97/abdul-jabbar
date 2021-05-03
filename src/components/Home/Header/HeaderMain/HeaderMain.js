@@ -38,7 +38,7 @@ const HeaderMain = () => {
                             }}        
                         />
                         <br/>
-                        <button className='custom_btn' data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'><a href="https://drive.google.com/uc?export=download&id=1bEni8nj3ku67YTUkuF5qUN_aY-q-TKs5"><FontAwesomeIcon className='download_icon' icon={faArrowCircleDown} /> Resume (PDF)</a>
+                        <button className='custom_btn' data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'><a href="https://drive.google.com/uc?export=download&id=1pQD6IkaFsVhrMT2YO-ZOPm1soUgxoL-z"><FontAwesomeIcon className='download_icon' icon={faArrowCircleDown} /> Resume (PDF)</a>
                     </button>
                     </div>
                 </div>
