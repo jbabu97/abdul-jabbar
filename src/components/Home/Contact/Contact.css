@@ -1,4 +1,18 @@
+.social {
+    margin-top: 40px;
+}
 .social_icon {
     font-size: 2rem;
     margin-right: 20px;
+    color: #e1b12c;
+    transition: .3s ease-in-out;
+}
+.social_icon:hover {
+    color: #918052;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact_info {
+      margin-bottom: 40px;
+    }
 }

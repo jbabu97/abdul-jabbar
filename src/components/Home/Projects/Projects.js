@@ -5,6 +5,11 @@ import { Link } from 'react-router-dom';
 import MamaSewing from '../ProjectMamaSewing/MamaSewing';
 import MiniBazar from '../MiniBazar/MiniBazar';
 import TravelHanger from '../TravelHanger/TravelHanger';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 
 const Projects = () => {
 
@@ -26,10 +31,10 @@ const Projects = () => {
 
     return (
         <section id='projects' className='container'>
-            <h1 className='text-center'>My Projects</h1>
+            <h1 className='tittle'>My Projects</h1>
             <div className="row">
                 <div className="col-md-4">
-                    <div className="text-center project">
+                    <div className="text-center project" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'>
                         <div>
                             <img className='img-fluid' src={MamaPhoto} alt=""/>
                             <h3>mama sewing</h3>
@@ -42,7 +47,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="col-md-4">
-                        <div className="text-center project">
+                        <div className="text-center project" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'>
                             <div>
                                 <img className='img-fluid' src={MamaPhoto} alt=""/>
                                 <h3>miniBazar</h3>
@@ -55,7 +60,7 @@ const Projects = () => {
                         </div>
                 </div>
                 <div className="col-md-4">
-                    <div className="text-center project"> 
+                    <div className="text-center project" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'> 
                         <div>
                             <img className='img-fluid' src={MamaPhoto} alt=""/>
                             <h3>travel hanger</h3>

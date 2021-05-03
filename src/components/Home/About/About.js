@@ -7,18 +7,20 @@ import './About.css';
 const About = () => {
     return (
         <section id='about' className='container'>
-            <h1 className='text-center'>About</h1>
+            <h1 className='tittle'>About</h1>
             <div className="row">
                 <div className="col-md-6">
                     <div className='about'>
-                        <img src={ProfilePhoto2} alt='' />
-                        <p>I am a junior web developer with very good knowledge of front-end skills. Coding is my passion. I love to do coding and very excited to learn new technologies. I also like to work in a team. I will be happy to work with you.</p>
-                        <button className='custom_btn'><a href="#contact">Hire Me</a></button>
+                        <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'>
+                            <img src={ProfilePhoto2} alt='' />
+                        </div>
+                        <p data-aos="slide-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'>I am a junior web developer with very good knowledge of front-end skills. Coding is my passion. I love to do coding and very excited to learn new technologies. I also like to work in a team. I will be happy to work with you.</p>
+                        <button className='custom_btn' data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'><a href="#contact">Hire Me</a></button>
                     </div>    
                 
                 </div>  
                 <div className="col-md-6">
-                    <div className='skills'>
+                    <div className='skills' data-aos="flip-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'>
                         <h3>Skills</h3>
                         <div>
                             <h5>html</h5>

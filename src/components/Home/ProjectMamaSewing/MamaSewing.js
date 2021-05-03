@@ -48,7 +48,7 @@ const MamaSewing = ({show, modalClose}) => {
                 </Modal.Body>
                 <Modal.Footer className='modal_footer'>
                     <a className='custom_btn' href="https://github.com/jbabu97/mama-sewing" target='_blank'>Client</a>
-                    <a className='custom_btn' href="https://github.com/jbabu97/mama-sewing-server" target='_blank'>Client</a>
+                    <a className='custom_btn' href="https://github.com/jbabu97/mama-sewing-server" target='_blank'>Server</a>
                     <a className='custom_btn' href="https://mama-sewing.web.app/" target='_blank'>Live Site</a>
                 </Modal.Footer>
             </Modal>

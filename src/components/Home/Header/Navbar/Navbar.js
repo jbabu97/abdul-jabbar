@@ -1,14 +1,13 @@
 import React from 'react';
 import './Navbar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import Logo from '../../../../photos/portfolio_logo.png';
 
 const Navbar = () => {
     return (
             <nav className="navbar navbar-expand-lg custom_navbar">
                 <div className="container-fluid">
-                    <Link className="navbar-brand custom_brand" to="/">AJ</Link>
+                    <Link className="navbar-brand custom_brand" to="/"><img src={Logo} alt=""/></Link>
                     <button className="navbar-toggler ml-auto toggle_icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>

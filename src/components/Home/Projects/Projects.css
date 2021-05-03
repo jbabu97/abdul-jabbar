@@ -35,3 +35,9 @@
 .project:hover .see_more {
     display: block;
 }
+
+@media only screen and (max-width: 768px) {
+    .project {
+      margin-bottom: 20px;
+    }
+  }

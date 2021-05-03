@@ -19,16 +19,16 @@ const Contact = () => {
     }
     
     return (
-        <section id='contact' className='container'>
-            <h2 className='text-center'>Contact Me</h2>
+        <section id='contact' className='container contact'>
+            <h2 className='tittle'>Contact Me</h2>
             <div className="row">
-                <div className="col-md-6">
-                    <div>
+                <div className="col-md-6 contact_info">
+                    <div data-aos="slide-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'>
                         <p>email: jabbar.babu81@gmail.com</p>
                         <p>phone: 8801718255175</p>
                         <p>locaton: Gazipur, Dhaka, Bangladesh</p>
                     </div>
-                    <div className="social">
+                    <div className="social" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'>
                         <a href="https://www.facebook.com/muhammadabduljabbar.babu" target='_blank'><FontAwesomeIcon className='social_icon' icon={faFacebook} /></a>
                         <a href="https://www.linkedin.com/in/jabbarbabu/" target='_blank'><FontAwesomeIcon className='social_icon' icon={faLinkedin} /></a>
                         <a href="https://twitter.com/jbabu97" target='_blank'><FontAwesomeIcon className='social_icon' icon={faTwitterSquare} /></a>
@@ -36,7 +36,7 @@ const Contact = () => {
                 </div>
                 <div className="col-md-6">
                     <p>Feel free to leave message here</p>
-                    <form onSubmit={sendEmail}>
+                    <form onSubmit={sendEmail} data-aos="flip-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'>
                         <div className="mb-3">
                             <input type="text" name='name' className="form-control" placeholder="Name" />
                         </div>
