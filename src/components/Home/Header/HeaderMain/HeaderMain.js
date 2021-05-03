@@ -15,7 +15,7 @@ const HeaderMain = () => {
                     <div>
                         <h3>I'm Abdul Jabbar</h3>
                         <ReactTypingEffect
-                            text={["Junior Web Developer.", "A Learner!!!"]}
+                            text={["Junior Web Developer", "A Learner!!!"]}
                             cursorRenderer={cursor => <h1>{cursor}</h1>}
                             displayTextRenderer={(text, i) => {
                             return (
