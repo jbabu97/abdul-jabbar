@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Projects.css';
-import MamaPhoto from '../../../photos/mama_sewing.jpg';
-import { Link } from 'react-router-dom';
+import MamaThumb from '../../../photos/mama_sewing.jpg';
+import MiniThumb from '../../../photos/mini_thumb.png';
+import TravelThumb from '../../../photos/travel_thumb.jpg';
 import MamaSewing from '../ProjectMamaSewing/MamaSewing';
 import MiniBazar from '../MiniBazar/MiniBazar';
 import TravelHanger from '../TravelHanger/TravelHanger';
@@ -36,7 +37,7 @@ const Projects = () => {
                 <div className="col-md-4">
                     <div className="text-center project" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'>
                         <div>
-                            <img className='img-fluid' src={MamaPhoto} alt=""/>
+                            <img className='img-fluid' src={MamaThumb} alt=""/>
                             <h3>mama sewing</h3>
                             <p>Tailoring Service Site</p>
                         </div>
@@ -49,7 +50,7 @@ const Projects = () => {
                 <div className="col-md-4">
                         <div className="text-center project" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'>
                             <div>
-                                <img className='img-fluid' src={MamaPhoto} alt=""/>
+                                <img className='img-fluid' src={MiniThumb} alt=""/>
                                 <h3>miniBazar</h3>
                                 <p>Grocery Site</p>
                             </div>
@@ -62,7 +63,7 @@ const Projects = () => {
                 <div className="col-md-4">
                     <div className="text-center project" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror='true'> 
                         <div>
-                            <img className='img-fluid' src={MamaPhoto} alt=""/>
+                            <img className='img-fluid' src={TravelThumb} alt=""/>
                             <h3>travel hanger</h3>
                             <p>Travel Service Site</p>
                         </div>
