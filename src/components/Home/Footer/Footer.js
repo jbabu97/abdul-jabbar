@@ -4,7 +4,8 @@ import './Footer.css';
 const Footer = () => {
     return (
         <section className='footer'>
-                <p>Abdul Jabbar &copy; {(new Date()).getFullYear()} All right reserved</p>
+                <p className='m-0'>Abdul Jabbar &copy; {(new Date()).getFullYear()} All right reserved</p>
+                
         </section>
     );
 };
